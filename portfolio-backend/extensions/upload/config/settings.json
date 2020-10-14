@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+      "cloud_name": "swedark",
+      "api_key": "858654459473263",
+      "api_secret": "COpMEQdVYsj_CHcDaUxg8iNdHR0"
+    }
+  }

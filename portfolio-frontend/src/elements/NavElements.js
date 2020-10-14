@@ -20,7 +20,7 @@ export const NavWrapper = styled.nav`
     height: 30px;
   }
   
-  a {
+  a{
     /* styling for all elements in nav, even the image. */
     padding: ${props => props.theme.spacings.small};
     text-decoration: none;    

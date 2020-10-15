@@ -3,6 +3,7 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { JobWrapper, JobArticle, JobButtonsContainer, JobCenter } from "../elements/JobElements"
+
 import { Button } from "../components/Button"
 export const query = graphql`
   {

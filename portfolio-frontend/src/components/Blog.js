@@ -10,7 +10,7 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
       {/* <article className="blog"> */}
         {/* if image is not supplied, instead of breaking, dont show any image */}
         {image && (
-          <Image fluid={image.childImageSharp.fluid} className="blog-img" />
+          <Image fluid={image.childImageSharp.fluid}/>
         )}
         <BlogCard>
           {/* if title is not supplied, set a defualt title */}

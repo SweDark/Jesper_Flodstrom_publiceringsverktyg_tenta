@@ -61,10 +61,10 @@ export const BlogsWrapper = styled.section`
 padding: 5rem 0;
 section a{
   display: block;
+  margin: 0 auto;
   width: 12rem;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 `
 

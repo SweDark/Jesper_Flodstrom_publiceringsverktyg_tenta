@@ -45,7 +45,7 @@ export const HeroWrapper = styled.header`
     }
   }
 `
-export const HeroDiv= styled.div`
+export const HeroDiv = styled.div`
 
   width: 90vw;
   margin: 0 auto;
@@ -64,7 +64,7 @@ export const HeroDiv= styled.div`
 
 }
 `
-export const HeroArticleUnderline= styled.div`
+export const HeroArticleUnderline = styled.div`
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;

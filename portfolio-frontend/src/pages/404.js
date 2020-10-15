@@ -1,6 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
-const Error = () => {
+const notFound = () => {
 return (
 <Layout>
     <main className="error-page">
@@ -13,4 +14,4 @@ return (
     </main>
 </Layout>
 )}
-export default Error
+export default notFound

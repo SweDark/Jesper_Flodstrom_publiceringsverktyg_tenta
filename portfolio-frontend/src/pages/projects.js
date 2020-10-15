@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import { ProjectPage } from "../elements/ProjectElements"
+import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 
 const ProjectsPage = ({
@@ -12,6 +13,7 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Projekt" description="Projektsidan" />
       <ProjectPage>
         <Projects projects={projects} title="Alla projekt" />
       </ProjectPage>

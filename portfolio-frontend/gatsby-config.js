@@ -9,7 +9,7 @@ module.exports = {
     title: "Min Portfolio",
     description: "Detta är min portfolio byggt i gatsby",
     author: "@SweDark",
-    twitterUsername: "@john_smilga",
+    twitterUsername: "@JesperFlodstrm",
     image: "/twitter-img.png",
     siteUrl: "https://jesper-flodstrom-publiceringverktyg-tenta.netlify.appp",
   },

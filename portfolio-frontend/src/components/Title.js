@@ -1,7 +1,12 @@
 import React from "react"
-
-const Title = () => {
-  return <h2>title component</h2>
+import { TitleWrapper } from "../elements/TitleElements"
+const Title = ({ title }) => {
+  return (
+    <TitleWrapper>
+      <h2>{title || "default title"}</h2>
+      <div></div>
+    </TitleWrapper>
+  )
 }
 
 export default Title

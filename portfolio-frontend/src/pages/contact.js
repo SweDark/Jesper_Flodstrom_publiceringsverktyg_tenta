@@ -1,41 +1,38 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-
+import { ContactWrapper } from "../elements/ContactElements"
 const contact = () => {
   return (
     <Layout>
       <SEO title="Kontakt" description="Kontaktsidan" />
-      <section className="contact-page">
-        <article className="contact-form">
+      <ContactWrapper>
+        <article>
           <h3>kontakta mig</h3>
           <form action="https://formspree.io/f/xnqojdap" method="POST">
-            <div className="form-group">
+            <div>
               <input
                 type="text"
-                placeholder="namn"
+                placeholder="Namn"
                 name="name"
-                className="form-control"
               />
               <input
                 type="email"
-                placeholder="epost"
+                placeholder="Epost"
                 name="email"
-                className="form-control"
               />
               <textarea
                 name="message"
                 rows="5"
-                placeholder="meddelande"
-                className="form-control"
+                placeholder="Meddelande"
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn btn">
+            <button type="submit">
               Kontakta mig
             </button>
           </form>
         </article>
-      </section>
+      </ContactWrapper>
     </Layout>
   )
 }

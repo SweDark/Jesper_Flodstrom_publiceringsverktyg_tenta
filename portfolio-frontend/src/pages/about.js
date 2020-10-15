@@ -7,6 +7,8 @@ import { Link } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 import downloadFile from "../../static/cv.pdf"
+import { AboutPage, AboutWrapper } from "../elements/AboutElements"
+import { Button } from "../components/Button"
 // ...GatsbyImageSharpFluid
 const About = ({
   data: {
@@ -17,33 +19,33 @@ const About = ({
   const { info, stack, title, image } = nodes[0]
   return (
     <Layout>
-      {/* <SEO title="CV" description="Jespers CV" /> */}
-      <section className="about-page">
-        <div className="section-center about-center">
+      <SEO title="CV" description="Jespers CV" />
+      <AboutPage>
+        <AboutWrapper>
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
-          <article className="about-text">
-            {/* <Title title={title} />
-                <p>{info}</p> */}
+          
+          <article>
             <ReactMarkdown source={info} />
-            <div className="about-stack">
+            <div>
               {stack.map(item => {
                 return <span key={item.id}>{item.title}</span>
               })}
             </div>
 
-            <div className="btn cv">
+            {/* <div className="btn"> */}
               <a href={downloadFile} download>Ladda ner fullständig CV</a>{` `}
-            </div>
-            <Link to='/contact' className="btn">
+            {/* </div> */}
+            <Button href={"/contact"}>Kontakta mig</Button>
+            {/* <Link to='/contact' className="btn">
               kontakta mig
-                        </Link>
+                        </Link> */}
           </article>
-        </div>
+        </AboutWrapper>
         <>
 
 
         </>
-      </section>
+      </AboutPage>
     </Layout>
   )
 }

@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Blogs from "../components/Blogs";
 import SEO from "../components/SEO"
+import { BlogPage} from "../elements/BlogElements"
 // ...GatsbyImageSharpFluid
 
 const Blog = ({
@@ -11,10 +12,10 @@ const Blog = ({
   },
 }) => {
   return <Layout>
-    {/* <SEO title="Bloggen" description="Bloggsidan" /> */}
-    <section className="blog-page">
+     <SEO title="Bloggen" description="Bloggsidan" />
+    <BlogPage>
       <Blogs blogs={blogs} title="Alla artiklar" />
-    </section>
+    </BlogPage>
   </Layout>
 };
 export const query = graphql`

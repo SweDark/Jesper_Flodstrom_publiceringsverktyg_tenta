@@ -7,37 +7,38 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa"
 
+import { IconsList} from "../elements/SocialIconsElements"
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+    icon: <FaFacebookSquare></FaFacebookSquare>,
     url: "https://www.facebook.com/jesper.flodstrom",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    icon: <FaLinkedin></FaLinkedin>,
     url: "https://www.linkedin.com/in/jesper-flodstr%C3%B6m-015749193/",
   },
+  // {
+  //   id: 4,
+  //   icon: <FaDribbbleSquare></FaDribbbleSquare>,
+  //   url: "https://www.twitter.com",
+  // },
+  // {
+  //   id: 5,
+  //   icon: <FaBehanceSquare></FaBehanceSquare>,
+  //   url: "https://www.twitter.com",
+  // },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
+    icon: <FaTwitterSquare></FaTwitterSquare>,
     url: "https://twitter.com/JesperFlodstrm",
   },
 ]
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url}>
         {link.icon}
       </a>
     </li>
@@ -46,6 +47,6 @@ const links = data.map(link => {
 
 export default ({ styleClass }) => {
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+    <IconsList>{links}</IconsList>
   )
 }

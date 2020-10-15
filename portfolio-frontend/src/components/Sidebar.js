@@ -1,14 +1,14 @@
 import React from 'react';
-import { Ul} from '../elements/NavElements'
+import {Ul} from '../elements/NavElements'
 import {Link} from "gatsby"
 const NavMenu = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><Link to="/">home</Link></li>
-      <li><Link to="/about">about</Link></li>
-      <li><Link to="/projects">projects</Link></li>
-      <li><Link to="/blog">blog</Link></li>
-      <li><Link to="/contact">contact</Link></li>
+      <li><Link to="/">Hem</Link></li>
+      <li><Link to="/about">Mitt CV</Link></li>
+      <li><Link to="/projects">Projekt</Link></li>
+      <li><Link to="/blog">Blog</Link></li>
+      <li><Link to="/contact">Kontakt</Link></li>
     </Ul>
   )
 }

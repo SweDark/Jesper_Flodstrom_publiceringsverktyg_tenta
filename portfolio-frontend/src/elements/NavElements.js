@@ -11,7 +11,7 @@ export const NavWrapper = styled.nav`
    display: flex;
    align-items: center;
    z-index: 200;
-   background: var(--clr-white);
+   background: ${props => props.theme.colors.white};
    justify-content: space-between;
    padding-left: 5%;
    padding-right: 5%;
@@ -25,15 +25,15 @@ export const NavWrapper = styled.nav`
     padding: ${props => props.theme.spacings.small};
     text-decoration: none;    
     text-transform: capitalize;
-    color: var(--clr-grey-1);
+    color: ${props => props.theme.colors.clrgrey1};
     font-weight: bold;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
+    letter-spacing: ${props => props.theme.spacings.spacing};
+    transition: ${props => props.theme.animations.transition};
   }
 
   a:hover{
-    color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
+    color: ${props => props.theme.colors.clrprimary5};
+    box-shadow: 0px 2px ${props => props.theme.colors.clrprimary5};
     /* filter: brightness(110%); */
   }
   @media ${props => props.theme.breakpoints.tablet} {

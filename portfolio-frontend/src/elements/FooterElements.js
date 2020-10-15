@@ -9,21 +9,24 @@ export const FooterWrapper = styled.footer`
 
   h4 {
     margin-top: 0.5rem;
-    color: var(--clr-white);
+    color: ${props => props.theme.colors.white};
     font-weight: normal;
     text-transform: uppercase;
 }
 
 h4 span {
-    color: var(--clr-primary-5);
+    color: ${props => props.theme.colors.clrprimary5};
+}
+a{
+  color: ${props => props.theme.colors.clrprimary7};
 }
 .footer-links {
   margin: 0 auto 1rem auto;
 }
 .social-link {
-  color: var(--clr-white);
+  color: ${props => props.theme.colors.white};
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: ${props => props.theme.colors.clrprimary5};
 }
 `

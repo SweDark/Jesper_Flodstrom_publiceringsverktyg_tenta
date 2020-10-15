@@ -1,4 +1,3 @@
-import "./src/css/main.css"
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
@@ -12,9 +11,9 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
+  font-family: ${props => props.theme.fonts.ffsecondary};
+  background: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.clrgrey1};
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
@@ -30,11 +29,11 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
+  letter-spacing: ${props => props.theme.spacings.spacing};
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: ${props => props.theme.fonts.ffprimary};
 }
 h1 {
   font-size: 3rem;
@@ -50,7 +49,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: ${props => props.theme.colors.clrgrey3};
 }
 @media screen and (min-width: 800px) {
   h1 {

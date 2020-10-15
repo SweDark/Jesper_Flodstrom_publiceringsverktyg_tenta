@@ -3,20 +3,20 @@ import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
+    icon: <FaCode/>,
     title: "web development",
-    text: `rect trade marfa salvia.`,
+    text: `Jag har använt mig mest utav webbutveckling i olika former`,
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby ats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaSketch/>,
+    title: "Backend-programmering",
+    text: `Jag tycker att det är roligt att sitta med backend-delen eftersom fantasin är gränsen på vad man kan göra`,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm hundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaAndroid/>,
+    title: "javascript programmering",
+    text: `Jag brukar leka runt med javascript, ett exempel är att jag brukar använda det när jag gör discord botar`,
   },
 ]

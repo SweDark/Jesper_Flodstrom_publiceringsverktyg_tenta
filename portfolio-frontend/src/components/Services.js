@@ -1,27 +1,27 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
-import { ServiceWrapper } from "../elements/ServiceElements"
+import { ServiceWrapper, ServiceArticle, ServiceDiv } from "../elements/ServiceElements"
 const Services = () => {
   return (
     
       <ServiceWrapper>
         <Title title="Tjänster" />
-        <div className="section-center services-center">
+        <ServiceDiv>
           {services.map(service => {
             //  destructure
             const { id, icon, title, text } = service
 
             return (
-              <article key={id} className="service">
+              <ServiceArticle key={id}>
                 {icon}
                 <h4>{title}</h4>
-                <div className="underline"></div>
+                <div></div>
                 <p>{text}</p>
-              </article>
+              </ServiceArticle>
             )
           })}
-        </div>
+        </ServiceDiv>
       </ServiceWrapper>
      
 

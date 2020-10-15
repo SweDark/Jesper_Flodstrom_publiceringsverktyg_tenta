@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
+import { ProjectPage } from "../elements/ProjectElements"
 // ...GatsbyImageSharpFluid
 
 const ProjectsPage = ({
@@ -11,9 +12,9 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-      <section className="project-page">
+      <ProjectPage>
         <Projects projects={projects} title="Alla projekt" />
-      </section>
+      </ProjectPage>
     </Layout>
   )
 }

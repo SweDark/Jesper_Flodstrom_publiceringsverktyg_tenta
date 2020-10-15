@@ -2,9 +2,8 @@ import React from "react"
 import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
-import { JobWrapper } from "../elements/JobElements"
-import { Link } from "gatsby"
-
+import { JobWrapper, JobArticle, JobButtonsContainer, JobCenter } from "../elements/JobElements"
+import { Button } from "../components/Button"
 export const query = graphql`
   {
     allStrapiJobs(sort: {fields: strapiId, order: DESC}) {
@@ -34,42 +33,42 @@ const Jobs = () => {
   console.log(company, position, date, desc)
 
   return (
-    <JobWrapper className ="section jobs">
+    <JobWrapper>
     {/*  <section className="section jobs"> */}
       <Title title="erfarenhet" />
-      <div className="jobs-center">
+      <JobCenter>
         {/* btn container */}
-        <div className="btn-container">
+        <JobButtonsContainer>
           {jobs.map((item, index) => {
             return (
               <button
                 key={item.strapiId}
                 onClick={() => setValue(index)}
-                className={`job-btn ${index === value && "active-btn"}`}
+                className={` ${index === value && "active-btn"}`}
               >
                 {item.company}
               </button>
             )
           })}
-        </div>
+        </JobButtonsContainer>
         {/* job info */}
-        <article className="job-info">
+        <JobArticle>
           <h3>{position}</h3>
           <h4>{company}</h4>
-          <p className="job-date">{date}</p>
+          <p>{date}</p>
           {desc.map(item => {
             return (
-              <div key={item.id} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+              <div key={item.id}>
+                <FaAngleDoubleRight></FaAngleDoubleRight>
                 <p>{item.name}</p>
               </div>
             )
           })}
-        </article>
-      </div>
-      <Link to="/about" className="btn center-btn">
-        Mitt CV
-      </Link>
+        </JobArticle>
+      </JobCenter>
+      <Button href={"/about"}>
+      Mitt CV
+      </Button>
     {/* </section> */}
     </JobWrapper>
   )

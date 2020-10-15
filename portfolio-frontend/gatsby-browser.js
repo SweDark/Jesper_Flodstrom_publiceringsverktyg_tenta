@@ -3,12 +3,12 @@ import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 
 const GlobalStyles = createGlobalStyle`
-    *,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
   font-family: ${props => props.theme.fonts.ffsecondary};

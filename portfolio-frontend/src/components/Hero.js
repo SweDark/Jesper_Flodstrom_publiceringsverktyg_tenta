@@ -26,16 +26,12 @@ const query = graphql`
       },
     } = useStaticQuery(query)
   
-    // console.log(data)
-  
     return (
       <HeroWrapper>
-        {/* <header className="hero"> */}
           <HeroDiv>
           <HeroArticle/>
             <Image fluid={fluid} className="hero-img" />
           </HeroDiv>
-        {/* </header> */}
       </HeroWrapper>
     )
   }

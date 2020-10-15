@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Link } from "gatsby"
 import { ErrorPage} from "../elements/ErrorElements"
 import { Button} from "../components/Button"
 const Error = () => {

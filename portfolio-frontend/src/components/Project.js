@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
-import { ProjectWrapper, ProjectInfo, ProjectStack, ProjectLinks, ProjectImage } from "../elements/ProjectElements"
+import { ProjectWrapper, ProjectInfo, ProjectStack, ProjectLinks} from "../elements/ProjectElements"
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (

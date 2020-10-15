@@ -20,13 +20,9 @@ h4 span {
 a{
   color: ${props => props.theme.colors.clrprimary7};
 }
-.footer-links {
-  margin: 0 auto 1rem auto;
+
+a:hover{
+  color:${props => props.theme.colors.clrprimary4};
 }
-.social-link {
-  color: ${props => props.theme.colors.white};
-}
-.social-link:hover {
-  color: ${props => props.theme.colors.clrprimary5};
-}
+
 `

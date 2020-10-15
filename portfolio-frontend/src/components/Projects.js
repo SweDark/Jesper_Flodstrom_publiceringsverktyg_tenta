@@ -8,7 +8,6 @@ import { ButtonCenter } from "../components/Button"
 const Projects = ({ projects, title, showLink }) => {
   return (
     <ProjectsWrapper>
-    {/* <section className="section projects"> */}
       <Title title={title} />
       <div>
         {projects.map((project, index) => {
@@ -19,7 +18,6 @@ const Projects = ({ projects, title, showLink }) => {
       {showLink && (
         <ButtonCenter href={"/projects"}>Alla Projekt</ButtonCenter>
       )}
-    {/* </section> */}
     </ProjectsWrapper>
   )
 }

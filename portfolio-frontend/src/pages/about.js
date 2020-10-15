@@ -32,13 +32,9 @@ const About = ({
               })}
             </div>
 
-            {/* <div className="btn"> */}
-              <a href={downloadFile} download>Ladda ner fullständig CV</a>{` `}
-            {/* </div> */}
+            <a href={downloadFile} download>Ladda ner fullständig CV</a>{` `}
             <Button href={"/contact"}>Kontakta mig</Button>
-            {/* <Link to='/contact' className="btn">
-              kontakta mig
-                        </Link> */}
+
           </article>
         </AboutWrapper>
         <>

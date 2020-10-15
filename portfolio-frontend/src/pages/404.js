@@ -1,16 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { ErrorPage} from "../elements/ErrorElements"
-import { Button} from "../components/Button"
 const Error = () => {
 return (
 <Layout>
-    <ErrorPage>
-        <div>
-            <h1>Oj, Något gick fel</h1>
-            <Button href={"/"}>Tillbaka Hem</Button>
+    <main className="error-page">
+        <div className="error-container">
+        <h1>Oj, Något gick fel</h1>
+        <Link to="/" className="btn">
+            Tillbaka Hem
+        </Link>
         </div>
-    </ErrorPage>
+    </main>
 </Layout>
 )}
 export default Error

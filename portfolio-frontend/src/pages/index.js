@@ -13,10 +13,10 @@ export default ({ data }) => {
    } = data
   return (
     <Layout>
-      <Hero />
+      {/* <Hero />
       <Services />
       <Jobs />
-      <Projects projects={projects} title="projekt i fokus" showLink /> 
+      <Projects projects={projects} title="projekt i fokus" showLink />  */}
       <Blogs blogs={blogs} title="Senaste artiklar" showLink />
     </Layout>
   )

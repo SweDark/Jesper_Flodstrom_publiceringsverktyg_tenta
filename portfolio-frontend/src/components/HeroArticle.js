@@ -9,7 +9,7 @@ const HeroArticle = () => {
     return (
         <HeroArticleWrapper>
             <div>
-                <h1>I'm Jesper</h1>
+                <h1>Jag är Jesper</h1>
                 <HeroArticleUnderline></HeroArticleUnderline>
                 <h4>Elev på TUC</h4>
                 - Jag lär mig just nu strapi, gatsby och GraphQL.

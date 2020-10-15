@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "Blog"
+    "name": "Blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -41,7 +42,9 @@
         "styledComponents",
         "javascript",
         "react",
-        "gatsby"
+        "gatsby",
+        "EntityFramework",
+        "Anime"
       ],
       "required": true
     },

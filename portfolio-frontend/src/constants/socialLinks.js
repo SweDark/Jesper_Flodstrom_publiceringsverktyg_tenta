@@ -6,8 +6,9 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
-
 import { IconsList} from "../elements/SocialIconsElements"
+
+//code for social links and their icons.
 const data = [
   {
     id: 1,

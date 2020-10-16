@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { HeroArticleWrapper, HeroArticleUnderline } from "../elements/HeroElements"
 import SocialLinks from "../constants/socialLinks"
 import { Button } from "../components/Button"
+//html code for the button and hero text
 const HeroArticle = () => {
     return (
         <HeroArticleWrapper>

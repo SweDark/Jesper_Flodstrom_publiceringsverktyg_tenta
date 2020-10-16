@@ -1,3 +1,5 @@
+What you need: a <a href="https://cloudinary.com/">cloudinary</a> account, a <a href="https://formspree.io/">formspree.io<a/> account, a code editing program (<a href="https://code.visualstudio.com/">Visual Studio Code<a/> would be prefered), <a href="https://www.gatsbyjs.com/">gatsby</a> and <a href="https://nodejs.org/en/">Node.js</a>.
+
 To install the project, you need to start with cloning the repository by 
 ```shell
 git clone https://github.com/SweDark/portfolio-school
@@ -33,6 +35,7 @@ gatsby develop
 ```
 After it has started, you can check the portfolio out on your browser by entering localhost:8000.
 Do remember to change the hero.js information and image, while also changing the constants to be linked to your facebook, twitter and sites you're on.
+And make sure to change the action form link in your contacts!
 
 ## Setup Notes
 

@@ -2,6 +2,8 @@ import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
 import { ServiceWrapper, ServiceArticle, ServiceDiv } from "../elements/ServiceElements"
+
+//for the service html.
 const Services = () => {
   return (
     

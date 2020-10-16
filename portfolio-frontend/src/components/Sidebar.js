@@ -1,6 +1,7 @@
 import React from 'react';
 import {Ul} from '../elements/NavElements'
 import {Link} from "gatsby"
+//menu links (from old navbar)
 const NavMenu = ({ open }) => {
   return (
     <Ul open={open}>

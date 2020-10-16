@@ -6,7 +6,7 @@ import { HeroWrapper, HeroDiv } from "../elements/HeroElements"
 import HeroArticle from "./HeroArticle"
 import SocialLinks from "../constants/socialLinks"
 // ...GatsbyImageSharpFluid
-
+//adds everything from heroarticle and adds the hero image
 const query = graphql`
     {
       file(relativePath: {eq: "hero-img.png"}) {

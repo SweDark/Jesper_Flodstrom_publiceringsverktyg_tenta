@@ -1,6 +1,7 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
 import { FooterWrapper } from "../elements/FooterElements"
+//footer html code
 const Footer = () => {
 return (
 <FooterWrapper>

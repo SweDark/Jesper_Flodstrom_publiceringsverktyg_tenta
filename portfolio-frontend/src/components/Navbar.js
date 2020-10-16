@@ -3,6 +3,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { NavWrapper} from '../elements/NavElements'
 import Hamburger from './Burger.jsx';
 
+
 const Navbar = () => { 
     const data = useStaticQuery(graphql`
         query {

@@ -4,7 +4,7 @@ import Project from "./Project"
 import { Link } from "gatsby"
 import { ProjectsWrapper } from "../elements/ProjectElements"
 import { ButtonCenter } from "../components/Button"
-
+//for the projects that is shown on the index page.
 const Projects = ({ projects, title, showLink }) => {
   return (
     <ProjectsWrapper>

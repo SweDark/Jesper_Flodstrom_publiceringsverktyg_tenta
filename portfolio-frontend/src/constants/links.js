@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+//menu - though I don't really use this one since the sidebar is for the menu.
 const data = [
   {
     id: 1,

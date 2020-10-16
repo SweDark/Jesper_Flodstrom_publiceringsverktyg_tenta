@@ -35,7 +35,6 @@ const Jobs = () => {
 
   return (
     <JobWrapper>
-    {/*  <section className="section jobs"> */}
       <Title title="erfarenhet" />
       <JobCenter>
         {/* btn container */}
@@ -70,7 +69,6 @@ const Jobs = () => {
       <Button href={"/about"}>
       Mitt CV
       </Button>
-    {/* </section> */}
     </JobWrapper>
   )
 }

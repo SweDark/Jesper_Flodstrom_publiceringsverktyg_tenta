@@ -1,5 +1,6 @@
 import React from "react"
 import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+//this is the service part on the index page, for what I can offer.
 export default [
   {
     id: 1,

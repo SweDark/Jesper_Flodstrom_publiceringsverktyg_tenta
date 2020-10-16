@@ -4,10 +4,10 @@ import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { ProjectWrapper, ProjectInfo, ProjectStack, ProjectLinks} from "../elements/ProjectElements"
 
+//code for every project
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
     <ProjectWrapper>
-    {/* <article className="project"> */}
         {/* if image is not supplied, instead of breaking, dont show any image */}
       {image && (
         
@@ -32,7 +32,6 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           </a>
         </ProjectLinks>
       </ProjectInfo>
-    {/* </article> */}
     </ProjectWrapper>
   )
 }
